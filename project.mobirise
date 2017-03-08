@@ -23,7 +23,12 @@
     },
     "versionFirst": "3.11.1",
     "uniqCompNum": 17,
-    "versionPublish": "3.12.1"
+    "versionPublish": "3.12.1",
+    "publishFtpPath": "public_html",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@",
+    "favicon": "@PROJECT_PATH@/assets/images/waterlogo-128x222.png",
+    "noImageResize": ""
   },
   "pages": {
     "index.html": {
