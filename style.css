@@ -1,0 +1,291 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*        NAVBAR                                                                             */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.navbar.scrolled {min-height: 80px;}
+
+.fixed-top .nav-link{
+	background-color: transparent !important;
+	color: white;
+}
+
+.fixed-top.scrolled {
+  background-color: black !important;
+  transition: background-color 200ms linear;
+}
+/*
+.fixed-top.scrolled .nav-link {
+  color:#555;
+}*/
+
+.navbar-nav a:hover{
+	color: #FF69B4;
+	border-bottom: 3px solid #FF69B4;
+	transition: all 0.3s ease-in;
+	padding: 15px 0;
+}
+
+/* change button color when collapse */
+.custom-toggler.navbar-toggler{
+    border-color: rgb(255,255,255);
+}
+
+/* change button color when collapse */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* change navbar background when collapse */
+@media (max-width: 768px) {
+  nav.navbar {
+    background: black;
+  }
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*        AQUI TUDO SOBRE O MENU/ NAVBAR           */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.menu{
+	max-width: 1140px;
+	margin: 0 auto;	
+}
+
+#logo{
+	height: 50px;
+	float: left;
+	margin-top: 20px;	
+}
+
+.main-nav{
+	list-style: none;
+	float: right;
+	margin-top: 40px;
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.main-nav li a{
+	font-family: 'Boogaloo';
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+.main-nav li a:hover{
+	color: #FF69B4;
+	border-bottom: 3px solid #FF69B4;
+	transition: all 0.3s ease-in;
+	padding: 10px 0;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*                  INTRODUÇÃO                     */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+header {
+	background-attachment: fixed;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(images/intro_bg.jpeg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+.inicio{
+	position: absolute;
+	/*width: 1140px;*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	/*background-color: red;*/
+}
+
+h1#titulo{
+	text-align: center;
+	color: white;	
+}
+
+#texto-abertura{
+	text-align: center;
+	color: white;	
+}
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*        AQUI TUDO SOBRE A SEÇÃO PROGRAMAÇÃO      */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+.programacao{
+    background: #4169E1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#4169E1, #8f9396); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4169E1, #8f9396); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4169E1, #8f9396); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4169E1, #8f9396); /* Standard syntax */	
+	height: 100vh;	
+	background-size: cover;	
+}
+
+.prog-titulo{
+	background-color: white;
+	padding-bottom: 50px
+}
+
+#text-h3um{
+	padding-top: 50px;
+}
+
+/*mostra a linha em baixo do texto*/
+#text-h3um:after{   
+	width: 300px;
+	height: 3px;
+	background-color: #FF69B4;
+	display: block;
+	content: "  ";
+	margin: 0 auto;
+	margin-top: 30px;	
+}
+
+.conteudo{
+    background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(#4169E1, #708090); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#4169E1, #708090); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#4169E1, #708090); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#4169E1, #708090); /* Standard syntax */
+    padding-top: 20px;
+    padding-bottom: 20px;    
+}
+
+.avisos{
+	margin-top: 30px;
+    background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+    /*background: -webkit-linear-gradient(#4169E1, #708090); /* For Safari 5.1 to 6.0 */
+    /*background: -o-linear-gradient(#4169E1, #708090); /* For Opera 11.1 to 12.0 */
+    /*background: -moz-linear-gradient(#4169E1, #708090); /* For Firefox 3.6 to 15 */
+    /*background: linear-gradient(#4169E1, #708090); /* Standard syntax */
+}
+
+.col-prog1{
+	background-color: white;
+}
+
+.aviso-tipo{
+	font-family: 'Rubik Mono One';
+}
+
+.aviso-detail{
+	font-family: 'Sriracha';
+	font-size: 20px;
+	line-height: 0.5;	
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*        AQUI TUDO SOBRE A SEÇÃO SOBRE NOS        */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media all and (min-width: 960px){
+	.about-us{
+		height: 100vh;	
+		background-size: cover;			
+	}
+}
+
+.about-us{
+	background-color: white;
+
+}
+
+.sobre-nos{
+	text-align: justify;
+	margin-top: 60px;
+	margin-left: 90px;
+}
+
+#titulo-dois{
+	color: blue;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*       FOTO SOBRE NOS                            */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.sobre-nos-img{
+	
+	margin-top: 60px;
+	margin-left: 40px;
+}
+
+img{
+	max-width: 100%;
+}
+
+figure.img-grupo{
+	position: relative;
+	margin-top: 50px;
+	margin-left: 20px;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.img-grupo img{
+	width: 100%;
+	height: 100%;
+		
+}
+
+figure.img-grupo figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.img-grupo:hover figcaption{
+	opacity: 1;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*       RODAPE                                    */
+/*|||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+footer.rodape{
+	background-color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: auto 0;
+}
+
+.centro{
+	text-align: center;
+	color: white;
+}
+
+#logo-bottom{
+	height: 50px;
+	padding-top: 10px;	
+}
+
+.text-format-dois{
+	font-size: 15px;
+	line-height: 0.4px;
+	font-family: 'Abel';
+	
+}
